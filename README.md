@@ -13,7 +13,7 @@ In order to find the correlation between different variables, following steps we
 # What is Random Forest?
 Random forests are bagged decision tree models that split on a subset of features on each split. This is a huge mouthful, so let’s break this down by first looking at a single decision tree, then discussing bagged decision trees and finally introduce splitting on a random subset of features.
 
-# Why is Random Forest So Cool?
+# Why Random Forest ?
 Whether we have a regression or classification task, random forest is an applicable model for our needs. It can handle binary features, categorical features, and numerical features. There is very little pre-processing that needs to be done. The data does not need to be rescaled or transformed.
 
 
