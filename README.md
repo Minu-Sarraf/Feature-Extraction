@@ -25,12 +25,12 @@ The best way to think about hyperparameters is like the settings of an algorithm
 Hyperparameter tuning relies more on experimental results than theory, and thus the best method to determine the optimal settings is to try many different combinations evaluate the performance of each model.
 
 # We tried adjusting the following set of hyperparameters:
-n_estimators = number of trees in the foreset
-max_features = max number of features considered for splitting a node
-max_depth = max number of levels in each decision tree
-min_samples_split = min number of data points placed in a node before the node is split
-min_samples_leaf = min number of data points allowed in a leaf node
-bootstrap = method for sampling data points (with or without replacement)
+ 1. n_estimators = number of trees in the foreset
+ 2. max_features = max number of features considered for splitting a node
+ 3. max_depth = max number of levels in each decision tree
+ 4. min_samples_split = min number of data points placed in a node before the node is split
+ 5. min_samples_leaf = min number of data points allowed in a leaf node
+ 6. bootstrap = method for sampling data points (with or without replacement)
 
 On each iteration, the algorithm will choose a difference combination of the features.  However, the benefit of a random search is that we are not trying every combination, but selecting at random to sample a wide range of values.
 
@@ -38,8 +38,8 @@ On each iteration, the algorithm will choose a difference combination of the fea
 First we used RandomForestRegressor to train the model and predict the total percent in the test data where the accuracy was only 64%.
 Then we used RandomForestClassifier to do the same and got maximum accuracy of 98.4% after tuning parameters and we realized that though below features have more impact than others, there is no strong relation among any features and hence, we cannot remove any features. To confirm this, we trained the model with top 7 features and the accuracy decreased from 98.4% to 70%
 # Top 4 features
-Time Outside of 7 AM to 7 PM	0.122006
-Messages Received per Day - Patient Calls	0.093028
-Time in In Basket per Day	0.089402
-Proficiency Score	0.088
+1. Time Outside of 7 AM to 7 PM	0.122006
+2. Messages Received per Day - Patient Calls	0.093028
+3. Time in In Basket per Day	0.089402
+4. Proficiency Score	0.088
 
