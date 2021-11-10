@@ -38,8 +38,8 @@ On each iteration, the algorithm will choose a difference combination of the fea
 First we used RandomForestRegressor to train the model and predict the total percent in the test data where the accuracy was only 64%.
 Then we used RandomForestClassifier to do the same and got maximum accuracy of 98.4% after tuning parameters and we realized that though below features have more impact than others, there is no strong relation among any features and hence, we cannot remove any features. To confirm this, we trained the model with top 7 features and the accuracy decreased from 98.4% to 70%
 # Top 4 features
-1. Time Outside of 7 AM to 7 PM	0.122006
-2. Messages Received per Day - Patient Calls	0.093028
-3. Time in In Basket per Day	0.089402
-4. Proficiency Score	0.088
+1. Feature 10	0.122006
+2. MessagesXXX - 	0.093028
+3. TimeXXX 0.089402
+4. PScore	0.088
 
