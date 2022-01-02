@@ -1,11 +1,11 @@
 # DATA
-Here, we are trying to find the relationship among various features so that we can extract only those features which has high weightage to the column 'Total Percentage'
+Here, we are trying to find the relationship among various features so that we can extract only those features which has high weightage to the desired column.
 # Feature-Extraction
 
 In order to find the correlation between different variables, following steps were taken:
 
 1. Explotary analysis of the data is done to remove null values, if any
-2. Data is classified into 4 category on the basis of percentile of column 'total percent'
+2. Data is classified into 4 category on the basis of percentile of desired column
 3. Plotting sctaterplot and finding correlation between data, No correlation was seen among the data
 4. Then  we used random forest to find any non-linear relation among the data.
 
